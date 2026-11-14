@@ -9,30 +9,38 @@
   main { max-width: 700px; margin: 0 auto; padding: 1.5rem 1rem 4rem; }
   h1 { font-size: 1.6rem; }
   h2 { font-size: 1.25rem; margin-top: 2rem; }
+  h3 { font-size: 1.1rem; margin-top: 1.5rem; }
   a { color: #9cf; }
 </style>
 </head>
 <body>
 <main>
 <h1>Política de privacidad de Vidente</h1>
-<p>Última actualización: 12 de noviembre de 2026.</p>
+<p>Última actualización: 14 de noviembre de 2026.</p>
 
 <p>Vidente es un lector de pantalla para Android pensado para personas ciegas o con baja visión. Esta política explica qué información usa la app, para qué, y qué sale o no sale de tu teléfono.</p>
 
 <h2>Resumen</h2>
-<p>Casi todo lo que hace Vidente ocurre dentro de tu teléfono. Vidente no tiene publicidad, no vende datos, no crea perfiles y no pide tu nombre, correo ni número de teléfono. Lo que Vidente lee de la pantalla, de las notificaciones, de la cámara y del micrófono se usa en el momento para hablarlo y no se guarda. Solo sale del teléfono en dos funciones opcionales, explicadas abajo: las funciones con inteligencia artificial (Gemini de Google), que necesitan tu aceptación previa, y las etiquetas compartidas (nombres de botones, sin datos personales). Todo lo que se envía viaja cifrado (HTTPS).</p>
+<p>Casi todo lo que hace Vidente ocurre dentro de tu teléfono. Vidente no tiene publicidad, no vende datos, no crea perfiles y no pide tu nombre, correo ni número de teléfono. Lo que Vidente lee de la pantalla, de las notificaciones, de la cámara y del micrófono se usa en el momento para hablarlo.</p>
+<p>Solo salen datos de tu teléfono en estas funciones opcionales:</p>
+<ul>
+  <li>Las funciones de inteligencia artificial, que envían imágenes, videos o texto de la pantalla a Gemini de Google. No envían nada hasta que aceptas su aviso.</li>
+  <li>Las etiquetas compartidas, que envían a un servidor de Google (Firebase) los nombres puestos a botones sin nombre y el identificador de la app donde están. Se apagan en Ajustes.</li>
+  <li>«Posición actual», que consulta el servicio de direcciones de tu teléfono.</li>
+  <li>El reconocimiento de voz de Android, cuando tu teléfono no puede hacerlo sin internet.</li>
+</ul>
 
 <h2>Servicio de accesibilidad</h2>
-<p>Para funcionar como lector de pantalla, Vidente usa la API de accesibilidad de Android. Con ella lee el contenido de las ventanas (textos, botones, campos, avisos), recibe tus gestos y puede realizar acciones por ti, como tocar un botón, desplazar una lista o escribir texto. Este contenido se procesa en tu teléfono, solo para leerlo en voz alta y ayudarte a usar el teléfono. Vidente no lo guarda de forma permanente y no lo envía a internet, salvo en las funciones con inteligencia artificial y las etiquetas compartidas descritas abajo.</p>
+<p>Para funcionar como lector de pantalla, Vidente usa la API de accesibilidad de Android. Con ella lee el contenido de las ventanas (textos, botones, campos, avisos), recibe tus gestos y puede realizar acciones por ti, como tocar un botón, desplazar una lista o escribir texto. Este contenido se procesa en tu teléfono para leerlo en voz alta y ayudarte a usar el teléfono. Solo sale del teléfono en las funciones opcionales de inteligencia artificial y de etiquetas compartidas que se explican más abajo. Vidente no usa estos datos para publicidad ni para ningún otro fin.</p>
 
 <h2>Notificaciones</h2>
 <p>Si das el permiso de acceso a notificaciones, Vidente lee en voz alta las notificaciones que llegan. Se procesan en el teléfono y no se envían a ningún lado.</p>
 
 <h2>Micrófono</h2>
-<p>Vidente usa el micrófono solo cuando tú lo pides con un gesto o botón, para las órdenes de voz y el dictado. La voz se convierte en texto con el reconocimiento de voz de Android. Vidente prefiere el reconocimiento dentro del teléfono; si tu teléfono no lo tiene, el sistema puede usar el servicio de reconocimiento de voz configurado en Android (por ejemplo, el de Google), que se rige por la política de ese proveedor. Vidente no graba ni guarda audio.</p>
+<p>Vidente usa el micrófono solo cuando tú lo pides con un gesto o botón: para las órdenes de voz, el dictado y las preguntas con la voz. La voz se convierte en texto con el reconocimiento de voz de Android. Vidente prefiere el reconocimiento dentro del teléfono; si tu teléfono no lo tiene, el sistema puede usar el servicio de reconocimiento de voz configurado en Android (por ejemplo, el de Google), que se rige por la política de ese proveedor. Vidente no graba ni guarda audio. Si la orden de voz es una tarea para la inteligencia artificial, el texto de lo que dijiste se envía a Gemini (ver más abajo).</p>
 
 <h2>Cámara</h2>
-<p>Vidente usa la cámara solo cuando abres una de sus funciones de visión: leer texto, reconocer billetes, detectar la luz, describir imágenes o detectar rostros (cuántos hay y dónde, sin identificar a nadie). Las imágenes se analizan dentro del teléfono con las herramientas de aprendizaje automático de Google ML Kit, salvo que uses la descripción con inteligencia artificial (ver más abajo). Vidente no guarda fotos ni video.</p>
+<p>Vidente usa la cámara solo cuando abres una de sus funciones de visión: leer texto, reconocer billetes, detectar la luz, describir lo que hay delante, buscar un objeto o detectar rostros (cuántos hay y dónde, sin identificar a nadie). El lector de billetes y el detector de luz trabajan siempre dentro del teléfono. Las demás funciones trabajan dentro del teléfono con Google ML Kit cuando no hay internet o no has aceptado el aviso de la inteligencia artificial; si lo aceptaste y hay internet, las fotos se envían a Gemini de Google (ver más abajo). Vidente no guarda fotos ni video.</p>
 
 <h2>Ubicación</h2>
 <p>Vidente pide tu ubicación solo cuando usas la función «Posición actual» y solo mientras la usas (nunca en segundo plano). Para decirte la dirección, Vidente usa el servicio de direcciones (geocodificación) de Android, que puede consultar al proveedor de servicios de ubicación de tu teléfono, normalmente Google. Vidente no guarda tu ubicación ni la envía a sus servidores.</p>
@@ -41,42 +49,49 @@
 <p>Si das el permiso de llamadas, Vidente puede contestar una llamada entrante cuando haces el gesto o la acción que elegiste para eso. Vidente no lee ni guarda tu registro de llamadas ni tus contactos.</p>
 
 <h2>Herramientas de Google ML Kit</h2>
-<p>Las funciones de lectura de texto, traducción, detección de idioma, etiquetado de imágenes y detección de rostros usan Google ML Kit. Las imágenes y los textos se procesan dentro del teléfono y ML Kit no los envía a Google. ML Kit sí envía a Google datos técnicos de uso y diagnóstico (modelo del teléfono, versión de la app, rendimiento de las funciones), como explica Google en <a href="https://developers.google.com/ml-kit/android-data-disclosure">su aviso de datos de ML Kit</a>. La primera vez que usas la traducción o ciertos idiomas, el teléfono descarga los modelos necesarios desde los servidores de Google.</p>
+<p>Las funciones de lectura de texto, traducción, detección de idioma, etiquetado de imágenes y detección de rostros dentro del teléfono usan Google ML Kit. Las imágenes y los textos se procesan dentro del teléfono y ML Kit no los envía a Google. ML Kit sí envía a Google datos técnicos de uso y diagnóstico (modelo del teléfono, versión de la app, rendimiento de las funciones), como explica Google en <a href="https://developers.google.com/ml-kit/android-data-disclosure">su aviso de datos de ML Kit</a>. La primera vez que usas la traducción o ciertos idiomas, el teléfono descarga los modelos necesarios desde los servidores de Google.</p>
 
-<h2>Funciones con inteligencia artificial (opcional)</h2>
-<p>Algunas funciones usan Gemini, el modelo de inteligencia artificial de Google, a través de Firebase. Solo funcionan después de aceptar su aviso de privacidad la primera vez. Sin esa aceptación no se envía nada y se usa el reconocimiento dentro del teléfono.</p>
+<h2>Inteligencia artificial (opcional)</h2>
+<p>Varias funciones de Vidente usan Gemini, el modelo de inteligencia artificial de Google, a través del servicio Firebase AI Logic de Google. Ninguna envía nada hasta que aceptas el aviso de la inteligencia artificial, que Vidente muestra la primera vez. Si no lo aceptas, Vidente usa el reconocimiento dentro del teléfono cuando existe. Los datos viajan por conexión cifrada (HTTPS).</p>
+
+<h3>Qué se envía en cada función</h3>
 <ul>
-  <li><strong>Cuando tú lo pides</strong> con un gesto, el menú o una orden de voz: «Describir con IA», «Preguntar a la IA sobre la imagen», «¿Qué hay en esta pantalla?» y, si la opción «Usar IA en el menú de reconocimiento» está marcada, el menú de reconocimiento (imagen, rostros, iconos, formularios, paisajes, casillas y texto del elemento).</li>
-  <li><strong>Automáticamente, para botones sin nombre</strong>: si tienes una suscripción o prueba activa y aceptaste el aviso de la IA, cuando el foco llega a un botón que la app dejó sin nombre, Vidente envía una imagen de ese botón y de la zona que lo rodea para que Gemini le ponga un nombre corto. El nombre se guarda en tu teléfono. Puedes apagarlo en Ajustes con «Nombrar con IA los botones sin etiqueta». Vidente no lo hace en apps que bloquean las capturas de pantalla ni en apps de mensajes (como WhatsApp, Telegram o Messenger), para no enviar conversaciones privadas.</li>
+  <li>«Describir con IA», «Preguntar a la IA sobre la imagen», el menú de reconocimiento con IA, el reconocimiento de la pantalla y «Pantalla virtual»: una imagen del elemento enfocado o de la pantalla completa en ese momento y, si preguntas, el texto de tu pregunta.</li>
+  <li>«¿Qué hay en esta pantalla?» y «Estoy perdido»: una imagen de la pantalla y el texto de accesibilidad de esa pantalla (textos y nombres de los botones), con el nombre de la app y de la ventana. «Estoy perdido» añade los nombres de las últimas pantallas por las que pasaste.</li>
+  <li>«Orden de voz», cuando pides una tarea: el texto de lo que dijiste y, en cada paso de la tarea, el texto de accesibilidad de la pantalla y el nombre de la app. Si diste a Vidente acceso a las notificaciones, también el nombre de la app y del chat de cada notificación que se puede responder, nunca el texto de sus mensajes; si la inteligencia artificial elige responder desde una notificación, el mensaje se envía por la propia app de mensajería, solo después de que digas que sí. Lo escrito en los campos de contraseña se quita antes. No se envían imágenes. La inteligencia artificial decide qué tocar, escribir o desplazar, y Vidente lo hace por ti; antes de enviar, pagar, borrar o llamar, Vidente siempre te pide confirmación, y un toque en la pantalla detiene la tarea.</li>
+  <li>Cámara de Vidente: las fotos que tomas para describir, leer, preguntar o buscar un objeto, tu pregunta, y en los modos en vivo una foto cada vez que la imagen cambia, mientras el modo está abierto.</li>
+  <li>«Describir un video» y «Describir con Vidente» al compartir un video: el video que eliges, con su sonido, hasta 10 minutos. Si es largo o pesado se envía una copia más pequeña, que se borra del teléfono al terminar.</li>
+  <li>«Narración en vivo»: mientras está encendida, una imagen de la pantalla cada pocos segundos, junto con las últimas frases que ya dijo.</li>
+  <li>Nombres automáticos para botones sin nombre: con la casilla marcada en Ajustes, cuando el foco se detiene en un botón que no tiene nombre, Vidente envía sin que lo pidas una imagen de ese botón con lo que tiene alrededor y el identificador de la app, para ponerle un nombre. Lo hace como máximo 10 veces al día y nunca en apps de mensajes ni en el teclado. El nombre obtenido se guarda en tu teléfono.</li>
 </ul>
-<p>Lo que se envía a Google por conexión cifrada (HTTPS):</p>
-<ul>
-  <li>Una imagen o foto: la del elemento enfocado, la de la pantalla en ese momento o la de la cámara.</li>
-  <li>Con «¿Qué hay en esta pantalla?», también el texto de accesibilidad de la pantalla (los nombres, tipos y posiciones de sus elementos). El contenido de los campos de contraseña nunca se incluye.</li>
-  <li>Las instrucciones de Vidente para describirla y, si preguntas, el texto de tu pregunta.</li>
-</ul>
-<p>Ten en cuenta que la imagen puede mostrar lo que haya en la pantalla, como mensajes o datos personales. Las imágenes y los textos se procesan solo para darte la respuesta: Vidente no los guarda en ningún servidor. Google los procesa según sus <a href="https://ai.google.dev/gemini-api/terms">términos de la API de Gemini</a> y su <a href="https://policies.google.com/privacy">política de privacidad</a>. La conversación de «Preguntar a la IA» queda solo en la memoria del teléfono durante 30 minutos. Para evitar abusos, el teléfono cuenta cuántas veces usas la IA cada día (hasta 30) y Google comprueba que la petición viene de una copia original de Vidente. Puedes dejar de usar la IA cuando quieras desde Ajustes.</p>
+<p>Ten en cuenta que las imágenes, los videos y el texto de la pantalla pueden contener lo que haya en ella en ese momento, como mensajes o datos personales. No uses la inteligencia artificial con pantallas que muestren contraseñas, datos del banco u otros datos privados. Vidente le pide a la inteligencia artificial que no identifique a personas por su cara.</p>
+
+<h3>Qué hace Google con esos datos</h3>
+<p>Google procesa los datos para dar la respuesta y, según sus <a href="https://ai.google.dev/gemini-api/terms">términos de la API de Gemini</a>, puede conservarlos por un tiempo limitado para detectar y prevenir abusos y por motivos de seguridad o legales. También se aplica la <a href="https://policies.google.com/privacy">política de privacidad de Google</a>. Para comprobar que el pedido viene de una copia original de Vidente, se usa Firebase App Check con Play Integrity, que envía a Google datos técnicos de la app y del dispositivo.</p>
+
+<h3>Qué guarda Vidente</h3>
+<p>Vidente no tiene servidores propios para la inteligencia artificial y no guarda en ningún servidor las imágenes, los videos ni las respuestas. La última imagen y la conversación de «Preguntar a la IA» quedan solo en la memoria del teléfono durante 30 minutos. Para limitar el uso, el teléfono lleva la cuenta de cuántas veces usas la inteligencia artificial (hasta 50 al día) y de los minutos de video, narración y cámara en vivo (hasta 300 al mes).</p>
+
+<h3>Cómo apagarla</h3>
+<p>Los modos en vivo solo envían mientras están encendidos. En Ajustes puedes desmarcar «Usar IA en el menú de reconocimiento» y los nombres automáticos de botones. Para retirar por completo tu aceptación del aviso, usa «Retirar la aceptación del aviso de la IA» en los Ajustes de Vidente: desde ese momento no se envía nada a la inteligencia artificial hasta que vuelvas a aceptarlo. La inteligencia artificial solo funciona con la suscripción anual; la prueba gratis de Vidente no la incluye.</p>
 
 <h2>Etiquetas compartidas (opcional)</h2>
-<p>Cuando tú o la IA le ponen nombre a un botón sin etiqueta, Vidente puede compartir ese nombre para que otros usuarios lo oigan en la misma app, y descargar los nombres que pusieron otros. Para eso envía al servidor de Vidente (Google Firebase), por conexión cifrada (HTTPS), solo esto:</p>
+<p>Las etiquetas compartidas sirven para que el nombre que alguien le puso a un botón sin nombre lo aprovechen los demás usuarios de Vidente. Vienen apagadas: solo funcionan si tú marcas la casilla «Etiquetas compartidas» en Ajustes (necesitan las herramientas avanzadas, con la prueba gratis o la suscripción), y se apagan desmarcándola. Mientras están encendidas:</p>
 <ul>
-  <li>El nombre del paquete de la otra app (por ejemplo, com.ejemplo.app) y su número de versión.</li>
-  <li>La clave técnica del botón dentro de esa app (su identificador interno, tipo y posición en la ventana).</li>
-  <li>El texto del nombre y si lo pusiste tú o la IA.</li>
+  <li>Al abrir una app, Vidente pide a la base de datos Firestore de Google (Firebase) las etiquetas de esa app. Para eso envía el identificador de la app (por ejemplo, com.ejemplo.app), como máximo de 40 apps al día.</li>
+  <li>Cuando tú o la inteligencia artificial ponen nombre a un botón, Vidente envía el identificador de la app, una clave técnica que ubica el botón dentro de la app y el nombre puesto.</li>
+  <li>Vidente crea una cuenta anónima de Firebase: un identificador al azar, sin tu nombre, correo ni número. Ese identificador acompaña a tus etiquetas y pueden verlo las demás copias de Vidente que descargan las etiquetas de esa misma app.</li>
 </ul>
-<p>Nunca se envían capturas, textos de la pantalla ni datos personales, y los nombres que parecen datos personales (correos, números largos, enlaces) no se comparten. Estos datos no están ligados a tu persona: Vidente no sabe quién eres. Un nombre solo se usa cuando al menos dos usuarios distintos coinciden. Puedes apagar esta función en Ajustes con «Etiquetas compartidas».</p>
-
-<h2>Identificador anónimo</h2>
-<p>Para las etiquetas compartidas, Vidente usa un identificador anónimo de Firebase creado al azar en tu teléfono. No es tu nombre, tu correo ni tu número, y no permite saber quién eres. Se usa solo para que la función trabaje (cada usuario tiene un solo voto por botón) y para evitar abusos (un límite de envíos por día). El servidor guarda junto a él solo un contador diario de envíos.</p>
+<p>No se envían imágenes ni el contenido de la pantalla. Las etiquetas se conservan mientras sean útiles para otros usuarios. Si quieres que se borren las ligadas a tu identificador, escríbenos.</p>
 
 <h2>Diagnóstico</h2>
-<p>Vidente tiene modos de diagnóstico que se encienden en Ajustes. Lo que registran queda solo en la memoria del teléfono. No se envía a ningún lado: solo sale si tú lo copias con el botón «Copiar diagnóstico» y lo pegas donde quieras.</p>
+<p>Para poder investigar fallos, Vidente guarda en tu teléfono un registro técnico de lo que dijo y de lo que decidió callar, con los textos recortados. El registro tiene un tamaño limitado (lo más viejo se borra solo) y se elimina al desinstalar la app o borrar sus datos. Vidente también tiene modos de diagnóstico más detallados que se encienden en Ajustes. Nada de esto se envía a ningún lado: solo sale del teléfono si tú lo copias con el botón «Copiar diagnóstico» y lo pegas donde quieras.</p>
 
 <h2>Ajustes y copia de seguridad</h2>
-<p>Tus ajustes de Vidente se guardan en el teléfono. Si tienes activada la copia de seguridad de Android, el sistema puede incluirlos en tu copia de seguridad de Google, como con otras apps. Al desinstalar Vidente se borran del teléfono.</p>
+<p>Tus ajustes de Vidente se guardan en el teléfono. Si tienes activada la copia de seguridad de Android, el sistema puede incluir parte de ellos en tu copia de seguridad de Google, como con otras apps; eso incluye tu aceptación del aviso de la inteligencia artificial y el identificador anónimo de las etiquetas compartidas. Al desinstalar Vidente se borran del teléfono.</p>
 
 <h2>Pagos</h2>
-<p>Si Vidente ofrece una suscripción, el pago se hace por Google Play. Vidente no recibe ni guarda tus datos de pago; solo recibe de Google Play la confirmación de que la suscripción está activa.</p>
+<p>La suscripción a las herramientas avanzadas se paga por Google Play. Vidente no recibe ni guarda tus datos de pago; solo recibe de Google Play la confirmación de que la suscripción está activa.</p>
 
 <h2>Lo que Vidente no hace</h2>
 <ul>
@@ -90,11 +105,10 @@
 <p>Vidente no está dirigida a menores de 13 años y no recopila a sabiendas datos de niños.</p>
 
 <h2>Tus derechos y borrado de datos</h2>
-<p>Casi todos los datos se quedan en tu teléfono: puedes borrarlos al desinstalar la app o al borrar sus datos desde los ajustes de Android. Eso también borra el identificador anónimo del teléfono. Para dejar de enviar datos, apaga «Etiquetas compartidas» y la IA en Ajustes.</p>
-<p>Para pedir que se borren datos del servidor (los nombres de botones que compartiste o el contador ligado a tu identificador anónimo), escríbenos al correo de abajo indicando la app y el nombre del botón. Como esos datos no están ligados a tu persona, no podemos buscarlos por tu nombre o correo, pero borraremos los que nos indiques en un plazo de 30 días.</p>
+<p>Los datos que se quedan en tu teléfono se borran al desinstalar la app o al borrar sus datos desde los ajustes de Android. Vidente no puede borrar lo que Google conserva por un tiempo limitado de los pedidos a la inteligencia artificial, porque no lleva tu nombre ni una cuenta tuya. Si usaste las etiquetas compartidas y quieres que se borren las ligadas a tu identificador anónimo, o tienes cualquier otra solicitud sobre tus datos, escríbenos al correo de abajo.</p>
 
 <h2>Cambios</h2>
-<p>Si esta política cambia, se publicará aquí la nueva versión con su fecha.</p>
+<p>Si esta política cambia, se publicará aquí la nueva versión con su fecha. Si cambia lo que envían las funciones de inteligencia artificial, Vidente vuelve a mostrar el aviso y pide de nuevo tu aceptación.</p>
 
 <h2>Contacto</h2>
 <p>Para cualquier pregunta sobre privacidad: <a href="mailto:videntesoft@gmail.com">videntesoft@gmail.com</a>.</p>
